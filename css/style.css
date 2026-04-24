@@ -1,1 +1,33 @@
 /*Hoja de estilos */
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex; /*activar flexbox en el nav*/
+    justify-content: space-between; /*La alineacion horizontal*/
+    align-items: center; /*La alineacion vertical*/
+    background-color: bisque;
+}
+nav a{
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    font-weight: 500;
+    padding: 15px;/*Espacio dentreo de los demas textos*/
+    transition: 0.6s;
+    border-radius: 60px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: rgb(143, 122, 97); /*cambia el color del fondo del color del texto*/
+    color: white;/*cambia el color del texto */
+    scale: 1.1; /*aumenta el tamaño del texto al pasar el mause */
+    transition: 0.6s;/*Tiempo de duracion del la animacion*/
+    
+}
+nav img{
+    width: 150px; /*Tamaño de la imagen */
+    border-radius: 90px;
+}
