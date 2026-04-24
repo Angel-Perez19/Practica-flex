@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
 }
-nav{
+
+.Inicio{
     display: flex; /*activar flexbox en el nav*/
     justify-content: space-between; /*La alineacion horizontal*/
     align-items: center; /*La alineacion vertical*/
     background-color: bisque;
 }
-nav a{
+.Inicio a{
     text-decoration: none;
     font-size: 19px;
     color: black;
@@ -19,7 +20,7 @@ nav a{
     border-radius: 60px;
 }
 
-nav a:hover{
+.Inicio a:hover{
     text-decoration: underline;
     background-color: rgb(143, 122, 97); /*cambia el color del fondo del color del texto*/
     color: white;/*cambia el color del texto */
@@ -27,7 +28,33 @@ nav a:hover{
     transition: 0.6s;/*Tiempo de duracion del la animacion*/
     
 }
-nav img{
+.Inicio img{
     width: 150px; /*Tamaño de la imagen */
     border-radius: 90px;
 }
+.Cards{
+    display: flex;
+    justify-content: space-evenly; /*alineacion Horizontal*/
+    gap: 30px; /*Separacion entre los elementos*/
+    margin-top: 25px /*Separar del menu */;
+    flex-wrap: wrap;
+    
+}
+.Card{
+    display: flex;
+    flex-direction: column; /*alineacion vertical*/
+    align-items: center;/* alineacion horizontal*/
+    gap: 20px; /*Separacion del texto de la imagen */
+
+}
+.Card img{
+   width: 300px;
+   height: 300px;
+   object-fit: cover;/*Para que la imagen nose apleste */
+   border-radius: 60px;
+}
+.Card h3{
+    font-size: 23px;
+    font-weight: 400;
+}
+
